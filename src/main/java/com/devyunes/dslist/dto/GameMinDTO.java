@@ -13,7 +13,7 @@ public class GameMinDTO {
 	}
 
 	public GameMinDTO(Long id, String title, Integer year, String imgUrl, String shortDescription) {
-		super();
+
 		this.id = id;
 		this.title = title;
 		this.year = year;

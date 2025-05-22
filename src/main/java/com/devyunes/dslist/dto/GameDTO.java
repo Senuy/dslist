@@ -5,7 +5,8 @@ import org.springframework.beans.BeanUtils;
 import com.devyunes.dslist.entities.Game;
 
 public class GameDTO {
-
+	private Long id;
+	private String title;
 	private Integer year;
 	private String genre;
 	private String platforms;
@@ -19,6 +20,24 @@ public class GameDTO {
 	
 	public GameDTO(Game entity) {
 		BeanUtils.copyProperties(entity, this);
+	}
+	
+	
+
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+
+	public String getTitle() {
+		return title;
+	}
+
+	public void setTitle(String title) {
+		this.title = title;
 	}
 
 	public Integer getYear() {
